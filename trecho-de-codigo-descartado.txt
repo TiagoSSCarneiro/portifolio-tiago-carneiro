@@ -1,0 +1,11 @@
+/* .home .img-home .img-box {
+    max-width: 450px;
+    margin: auto;
+    border-radius: 50%;
+} */
+/* .home .img-home .img-box img {
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid transparent;
+} */
+Codigo para colocar sombra na imagem
