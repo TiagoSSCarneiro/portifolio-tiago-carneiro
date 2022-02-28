@@ -15,6 +15,16 @@ body{
 
 .row {
     display: flex;
+     
+}
+
+.justify-content-betwen {
+    justify-content: space-between;
+
+
+}
+
+.alinhar-item-no-centro{
     align-items: center;
     
 }
