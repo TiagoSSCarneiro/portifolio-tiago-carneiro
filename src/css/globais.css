@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&family=Public+Sans:wght@400;800&family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;800&family=Raleway:wght@100;500;600;700&family=Roboto:wght@300;700&display=swap');
+
+html {
+    color: var(--cor-branca);
+    font-size: 62,5%;
+    font-weight: 300;
+}
+
+body{
+    background-color: var(--cor-fundo-cinza-escuro);
+    font-family: var( --fonte-primaria);
+    font-size: var(--fonte-normal);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    
+}
