@@ -1,3 +1,6 @@
+.sobre-mim h2{
+    margin-top: 100px;
+}
 .sobre-mim .imagem-sobre-mim{
     max-width: 40%;
     padding: 0 15px;
@@ -6,11 +9,6 @@
     padding: 15px;
     border-radius: 5px;
     text-align: center;
-}
-
-.sobre-mim .imagem-sobre-mim img {
-    border: 10px solid transparent;
-    border-radius: 5px;
 }
 
 .sobre-mim .informacoes-sobre-mim {

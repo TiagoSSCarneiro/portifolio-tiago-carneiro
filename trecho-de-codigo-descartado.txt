@@ -9,3 +9,17 @@
     border: 10px solid transparent;
 } */
 Codigo para colocar sombra na imagem
+
+palheta de cores
+.color1 {color: #120907;}
+.color2 {color: #161b23;}
+.color3 {color: #2e4560;}
+.color4 {color: #4d769f;}
+.color5 {color: #6bace1;}
+
+paleta dois com cores mais vibrantes
+.color1 {color: #001527;}
+.color2 {color: #003c5c;}
+.color3 {color: #006e9d;}
+.color4 {color: #00ade9;}
+.color5 {color: #00f7ff;}

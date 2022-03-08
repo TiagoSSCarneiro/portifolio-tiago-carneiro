@@ -52,9 +52,8 @@ body{
     line-height: 40px;
     margin-left: 3px;
 }
-
 .outer-shadow {
-    box-shadow: 3px 3px #222327, -3px -3px 3px #454545;
+    box-shadow:-1px -1px 5px #42d1f5;
 }
 
 .inner-shadow {
