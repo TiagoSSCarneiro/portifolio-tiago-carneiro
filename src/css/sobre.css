@@ -2,7 +2,7 @@
     margin-top: 100px;
 }
 .sobre-mim .imagem-sobre-mim{
-    max-width: 40%;
+    max-width: 30%;
     padding: 0 15px;
 }
 .sobre-mim .imagem-sobre-mim .img-box {
@@ -21,7 +21,7 @@
 }
 
 .sobre-mim .informacoes-sobre-mim p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
@@ -44,5 +44,22 @@
         max-width: 100%;   
     } 
 }
+
+@media(max-width:768px) {
+    .sobre-mim .section-title {
+        margin-top: 100px;
+        padding: 40px 0 10px;
+    }
+    .sobre-mim .section-title h2{
+        font-size: var(--fonte-grande);
+        margin-top: 0;  
+    }
+
+    .sobre-mim .imagem-sobre-mim {
+        display: none;
+    }
+
+}
+
 
 

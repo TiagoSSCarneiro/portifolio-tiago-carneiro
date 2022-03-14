@@ -47,6 +47,26 @@
     }
 }
 
+@media (max-width: 768px) {
+     
+    .home .texto-home h1 {
+        font-size: var(--fonte-grande);
+    }
+    .home .texto-home h2 {
+        font-size: var(--fonte-normal);
+    }
+
+    .home .img-home {
+        margin-top: 5px;
+        padding: 5px 0;
+    }
+
+    .home .img-box {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
 
 
 

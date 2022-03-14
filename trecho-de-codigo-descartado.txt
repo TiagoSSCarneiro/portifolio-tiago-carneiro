@@ -23,3 +23,26 @@ paleta dois com cores mais vibrantes
 .color3 {color: #006e9d;}
 .color4 {color: #00ade9;}
 .color5 {color: #00f7ff;}
+
+Codigo javascript para fazer uma animacao dos projetos
+function ativaNoScroll() {
+	
+	document.querySelectorAll('img').forEach((img, index) => {
+		if(img.getBoundingClientRect().top < window.innerHeight) {
+			img.src = img.getAttribute('data-src');
+		};		
+	})
+
+}
+window.addEventListener('scroll', ativaNoScroll);
+
+Codido CSS
+.projetos .container-projetos .projeto img[data-src]{
+    opacity: 0;
+    transform: scale(3);
+}
+.projetos .container-projetos .projeto img[src]{
+    opacity: 1;
+    transform: scale();
+    transition: 0.3s ease-in-out;
+}

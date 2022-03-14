@@ -3,9 +3,9 @@
 }
 .projetos .container-projetos{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     margin: 0 auto;
-    grid-gap:20px;
+    grid-gap: 20px;
 }
 
 @media(max-width:1280px){
