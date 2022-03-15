@@ -2,21 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;800&family=Raleway:wght@100;500;600;700&family=Roboto:wght@300;700&display=swap');
 
 html {
-    color: var(--cor-branca);
+    color: var(--cor-clara);
     font-size: 62,5%;
     font-weight: 300;
     scroll-behavior: smooth;
 }
 
 body{
-    background-color: var(--cor-fundo-cinza-escuro);
+    background-color: var(--cor-fundo-escuro);
     font-family: var( --fonte-primaria);
     font-size: var(--fonte-normal);
 }
 
 .container {
     max-width: 1440px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
@@ -40,7 +40,6 @@ body{
     font-size: 2.1rem;
     text-align: center;
     margin: 0 4px;
-    border-radius: 50%;
     transition: all 0.3s ease;
 }
 
@@ -52,16 +51,9 @@ body{
     line-height: 40px;
     margin-left: 3px;
 }
-.outer-shadow {
-    box-shadow:-1px -1px 5px #42d1f5;
-}
-
-.inner-shadow {
-    box-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #454545;
-}
 
 .section {
-    padding: 7rem 0 7rem;
+    padding: 6.3rem 0 6.3rem;
 }
 
 .section-title{
@@ -87,6 +79,6 @@ body{
 
 .botao:hover{
     background-color: var(--cor-secundaria);
-    color: var(--cor-branca);
+    color: var(--cor-clara);
 }
 

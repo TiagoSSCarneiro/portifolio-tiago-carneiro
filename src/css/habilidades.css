@@ -1,3 +1,4 @@
+
 .habilidades .container-habilidades{
     text-align: center;
     justify-content: center;
@@ -5,7 +6,7 @@
 
 .habilidades .container-habilidades .habilidade {
     max-width: 350px;
-    padding: 20px 20px;
+    padding: 20px ;
 }
 
 .habilidades .container-habilidades .habilidade p,
@@ -33,3 +34,18 @@
     font-size: 8rem;
 }
 
+@media (max-width: 425px) {
+   
+    .habilidades .row .section-title h2  {
+        font-size: var(--fonte-grande);
+    }
+    .habilidades .container-habilidades .habilidade p{
+        font-size: 1.4rem;
+    }
+    .habilidades .container-habilidades .habilidade i{
+        font-size: 5rem;
+    }
+    .habilidades .container-habilidades .habilidade h3{
+        font-size: var(--fonte-normal);
+    }
+}

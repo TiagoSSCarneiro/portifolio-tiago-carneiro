@@ -1,7 +1,8 @@
 .home .full-screen{
+    padding-top: 90px;
     min-height: 86vh;
-    padding: 50px 0; 
     justify-content: center;
+    align-items: center;
 }
 
 .home .texto-home{
@@ -10,7 +11,6 @@
 
 .home .texto-home, 
 .home .img-home {
-    margin-top: 100px;
     flex: 0 0 50%;
     max-width: 40%;
     padding: 0 15px;
@@ -55,19 +55,8 @@
     .home .texto-home h2 {
         font-size: var(--fonte-normal);
     }
-
-    .home .img-home {
-        margin-top: 5px;
-        padding: 5px 0;
-    }
-
     .home .img-box {
         width: 40%;
         margin: 0 auto;
     }
 }
-
-
-
-
-
