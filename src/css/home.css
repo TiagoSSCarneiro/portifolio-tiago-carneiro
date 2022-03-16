@@ -48,7 +48,10 @@
 }
 
 @media (max-width: 768px) {
-     
+    .home .texto-home {
+        padding-top: 60px;
+    }
+
     .home .texto-home h1 {
         font-size: var(--fonte-grande);
     }
@@ -56,7 +59,14 @@
         font-size: var(--fonte-normal);
     }
     .home .img-box {
-        width: 40%;
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 411px) {
+    .home .img-box {
+        width: 60%;
         margin: 0 auto;
     }
 }
