@@ -9,22 +9,36 @@
     letter-spacing: 2px;
 }
 
+.home::after{
+    content: url(../image/setabranca.png);
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    z-index: -1;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes downarrow {
+    0% {-webkit-transform: translateY(0); opacity: 0.4;}
+    100% {-webkit-transform: translateY(0.4em); opacity: 0.9;}
+}
+
 .home .texto-home, 
 .home .img-home {
     flex: 0 0 50%;
-    max-width: 40%;
+    max-width: 30%;
     padding: 0 15px;
 }
 
 .home .texto-home p {
     font-family: var(--fonte-secundaria);
-    font-size: var(--fonte-grande);
+    font-size: var(--fonte-normal);
     margin-bottom: 10px;
 }
 
 .home .texto-home h1 {
     font-family: var(--fonte-secundaria);
-    font-size: var(--fonte-gigante);
+    font-size: var(--fonte-grande);
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -40,7 +54,16 @@
     .home .texto-home,
     .home .img-home {
         flex: 0 0 100%;
-        max-width: 100%;
+        max-width: 30%;
+        text-align: center;
+        padding: var(--mobile-padding);    
+    }
+}
+@media (max-width:1024px) {
+    .home .texto-home,
+    .home .img-home {
+        flex: 0 0 100%;
+        max-width: 40%;
         text-align: center;
         padding: var(--mobile-padding);
         
@@ -49,7 +72,7 @@
 
 @media (max-width: 768px) {
     .home .texto-home {
-        padding-top: 60px;
+        padding: 10px;
     }
 
     .home .texto-home h1 {
@@ -59,14 +82,34 @@
         font-size: var(--fonte-normal);
     }
     .home .img-box {
-        width: 60%;
         margin: 0 auto;
     }
 }
 
 @media (max-width: 411px) {
+    .row {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .home .texto-home h1{
+        font-size: 30px  
+    }
+
+    .home .texto-home h2{
+        font-size: 16px;
+    }
+
+    .home .img-home {
+        width: 50%;
+        margin-top: 30px;
+        padding: 0;  
+    }
+    
     .home .img-box {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
+    }
+    .home::after {
+        display: none;
     }
 }
