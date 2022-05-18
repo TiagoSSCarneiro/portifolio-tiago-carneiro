@@ -1,0 +1,39 @@
+.seta {
+    width: 40px;
+    color: rgb(24, 23, 23);
+    top: calc(50% - 13px) ;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7rem;
+    margin-top: -5px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+} 
+
+.seta:hover {
+    transform: scale(1.2);
+}
+
+.seta-voltar {
+    left: 10px;
+}
+.seta-ativa{
+    display: block;
+}
+
+.seta-avancar{
+    right: 10px;
+}
+.projeto {
+    display: none;
+}
+
+.img-ativa {
+    display: block;
+} 
