@@ -1,0 +1,69 @@
+<div class="projeto img-ativa">
+                 <a href="https://tiagosscarneiro.github.io/brandname/" target="_blank" >
+                     <img src="./src/image/imgbrandname.png" alt="nome do projeto">
+                    <h3>Projeto1</h3>
+                </a> 
+            </div>
+            <div class="projeto ">
+                 <a href="https://tiagosscarneiro.github.io/projeto-pizzaria/" target="_blank">
+                    <img src="src/image/imglapizza.png" alt="nome do projeto"> 
+                    <h3>Projeto2</h3>
+                </a>
+            </div>
+            <div class="projeto ">
+                 <a href="https://tiagosscarneiro.github.io/landing-page-xyz/" target="_blank">
+                    <img src="src/image/imgxyz.png" alt="nome do projeto"> 
+                    <h3>Projeto3</h3>
+                </a> 
+            </div>
+            <div class="projeto ">
+                 <a href="https://tiagosscarneiro.github.io/pagina-web-agenciaXPTO/" target="_blank">
+                    <img src="src/image/imgxpto.png"  alt="imagem do projeto">
+                    <h3>Projeto4</h3>   
+                </a> 
+            </div>    
+        </div>
+
+CSS: projeto
+.projetos .section-title{
+    padding-top: 180px;
+}
+.container-projetos {
+    position: relative;
+    
+}
+
+.container-projetos .projetos .projeto {
+    transition: all 0.3s ease-out;
+}
+
+
+.projetos .container-projetos .projeto img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projetos .container-projetos .projeto h3{
+    font-size: 2rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--cor-fundo-muito-escuro);
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    opacity: 0.7;
+}
+
+@media (max-width: 425px) {
+    .projetos .row .section-title h2 {
+        font-size: var(--fonte-grande);
+    }
+
+    .projetos .container-projetos {
+        margin: 10px;
+    }
+}

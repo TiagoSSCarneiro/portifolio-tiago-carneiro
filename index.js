@@ -6,14 +6,28 @@ const setaAvancar = document.getElementById('seta-avancar')
 let imgAtual = 0
 
 
-function mostrarSeta() {
-    listaSeta.forEach(seta =>{
-        seta.classList.add('seta-ativa')
-    })
-  
+function mostrarOuEsconderSeta() {
+    const naoEhAPrimeiraImagem = imgAtual !== 0
+    if(naoEhAPrimeiraImagem){
+        console.log("adicionou a seta")
+        setaVoltar.classList.remove('seta-ativa')
+    }else {
+        console.log('removeu a seta')
+        setaVoltar.classList.add('seta-ativa')
+    }
+
+    const chegouNaUltimaImagem = imgAtual !== 0 && imgAtual === listaImagens.length-1
+    if(chegouNaUltimaImagem) {
+        console.log('Ultima Imagem')
+        setaAvancar.classList.add('seta-ativa')
+    
+     }else{
+         setaAvancar.classList.remove('seta-ativa')
+     }
+
 }
 
-function mostrarImagens () {
+function mostrarImagens() {
     listaImagens[imgAtual].classList.add('img-ativa')
 
 
@@ -26,28 +40,27 @@ function esconderImagens() {
 }
 
 setaAvancar.addEventListener('click', function () {
-    //Verificar se chegou na ultima imagem
-    //se sim, tirar seta e dar o return
+    
+    if (imgAtual === listaImagens.length - 1) {
+        return  
+    } 
 
-    console.log(imgAtual)
-    console.log(listaImagens.length-1)
-   
-    imgAtual ++ 
-   
+    imgAtual++
     esconderImagens()
     mostrarImagens()
-    //mostrarSeta()
-    if (imgAtual === listaImagens.length-1) {
-        console.log('teste seta')
-      
-    }  
+    mostrarOuEsconderSeta()
+
 })
 
 setaVoltar.addEventListener('click', function () {
-    if (imgAtual == 0) return
-    imgAtual --
+    if (imgAtual == 0) {
+        return
+    }
+    
+    imgAtual--
     esconderImagens()
     mostrarImagens()
-   
+    mostrarOuEsconderSeta()
+
 })
 

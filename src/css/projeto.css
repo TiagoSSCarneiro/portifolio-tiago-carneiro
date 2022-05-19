@@ -1,38 +1,33 @@
-.projetos .section-title{
-    padding-top: 180px;
-}
 
-.container-projetos {
-   position: relative;
-     
-} 
-
-.projetos .container-projetos .projeto img {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    height: 100%;
-    object-fit: cover;
-}
-
-.projetos .container-projetos .projeto h3{
-    font-size: 2rem;
-    font-weight: 500;
-    position: absolute;
-    bottom: 0;
-    background-color: var(--cor-fundo-muito-escuro);
+.projetos .painel-projetos .imagem-projeto{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    opacity: 0.7;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
 }
 
-@media (max-width: 425px) {
-    .projetos .row .section-title h2 {
-        font-size: var(--fonte-grande);
-    }
-
-    .projetos .container-projetos {
-        margin: 10px;
-    }
+.projetos .painel-projetos .projeto1{
+    background-image: url(../image/imgbrandname.png);
 }
+
+.projetos .painel-projetos .projeto2{
+    background-image: url(../image/imglapizza.png);
+}
+
+.projetos .painel-projetos .projeto3{
+    background-image: url(../image/imgxyz.png);
+}
+
+.projetos .imagem-projeto.mostrar{
+    opacity: 1;
+}
+
+.projetos .painel-projetos h2{
+    text-transform: uppercase;
+}
+

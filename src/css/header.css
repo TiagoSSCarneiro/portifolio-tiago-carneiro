@@ -6,7 +6,7 @@
     padding: 30px 15px;
     background-color:var(--cor-fundo-claro);
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header .logo {

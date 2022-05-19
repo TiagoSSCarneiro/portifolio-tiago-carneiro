@@ -13,7 +13,6 @@
     margin-top: -5px;
     position: absolute;
     z-index: 1;
-    display: none;
 } 
 
 .seta:hover {
@@ -24,14 +23,11 @@
     left: 10px;
 }
 .seta-ativa{
-    display: block;
+   display: none;
 }
 
 .seta-avancar{
     right: 10px;
-}
-.projeto {
-    display: none;
 }
 
 .img-ativa {
