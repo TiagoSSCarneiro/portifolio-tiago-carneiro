@@ -1,12 +1,15 @@
-
+.projetos{
+    height: 100vh;
+    position: relative;
+}
 .projetos .painel-projetos .imagem-projeto{
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     transition: 0.3s ease-in-out;
     opacity: 0;
 }
@@ -21,6 +24,10 @@
 
 .projetos .painel-projetos .projeto3{
     background-image: url(../image/imgxyz.png);
+}
+
+.projetos .painel-projetos .projeto4 {
+    background-image: url(../image/pokedex.png);
 }
 
 .projetos .imagem-projeto.mostrar{

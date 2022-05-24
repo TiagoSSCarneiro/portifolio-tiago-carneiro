@@ -1,4 +1,5 @@
-const listaImagens = document.querySelectorAll('.projeto')
+const listaImagens = document.querySelectorAll('.imagem-projeto')
+console.log(listaImagens)
 const listaSeta = document.querySelectorAll('.seta')
 const setaVoltar = document.getElementById('seta-voltar')
 const setaAvancar = document.getElementById('seta-avancar')
@@ -28,13 +29,13 @@ function mostrarOuEsconderSeta() {
 }
 
 function mostrarImagens() {
-    listaImagens[imgAtual].classList.add('img-ativa')
+    listaImagens[imgAtual].classList.add('mostrar')
 
 
 }
 function esconderImagens() {
     listaImagens.forEach(imagem => {
-        imagem.classList.remove('img-ativa')
+        imagem.classList.remove('mostrar')
 
     })
 }

@@ -1,8 +1,4 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     padding: 30px 15px;
     background-color:var(--cor-fundo-claro);
     width: 100%;

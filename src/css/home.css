@@ -1,6 +1,5 @@
 .home .full-screen{
-    padding-top: 90px;
-    min-height: 86vh;
+    min-height: 56vh;
     justify-content: center;
     align-items: center;
 }
@@ -9,19 +8,7 @@
     letter-spacing: 2px;
 }
 
-.home::after{
-    content: url(../image/setabranca.png);
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    z-index: -1;
-    animation: downarrow 0.6s infinite alternate ease-in-out;
-}
 
-@-webkit-keyframes downarrow {
-    0% {-webkit-transform: translateY(0); opacity: 0.4;}
-    100% {-webkit-transform: translateY(0.4em); opacity: 0.9;}
-}
 
 .home .texto-home, 
 .home .img-home {
